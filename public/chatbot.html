@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>SOULMATE AI | Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <div class="navbar">
+    <div class="logo" onclick="goHome()">SOULMATE AI 🤍</div>
+  </div>
+
+  <!-- ===== Chat Wrapper ===== -->
+  <div class="chat-wrapper">
+
+    <!-- ===== Chatbot Container ===== -->
+    <div id="chatbot-container">
+      
+      <div id="chatbot-header">
+        <span>SOULMATE AI</span>
+      </div>
+
+      <div id="chatbot-body">
+        <div id="chatbot-messages"></div>
+      </div>
+
+      <div id="chatbot-input-container">
+        <input
+          id="chatbot-input"
+          type="text"
+          placeholder="พิมพ์ข้อความของคุณ..."
+        />
+        <button id="send-btn">ส่ง</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // กดโลโก้กลับหน้าแรก
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
